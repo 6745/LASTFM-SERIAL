@@ -1,5 +1,7 @@
 {
     "user": "YOUR_USERNAME",
-    "api_key": "YOUR_API_KEY"
+    "api_key": "YOUR_API_KEY",
+    "serial_port": "YOUR COMPORT",
+    "baud_rate": "YOUR BAUD"
   }
   
