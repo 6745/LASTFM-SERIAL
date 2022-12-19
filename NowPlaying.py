@@ -7,11 +7,13 @@ with open('config.json') as config_file:
   config = json.load(config_file)
   user = config['user']
   api_key = config['api_key']
+  serial_port = config['serial_port']
+  baud_rate = config['baud_rate']
 
 try:
   ser = serial.Serial( # set parameters, in fact use your own :-)
-    port="COM3",
-    baudrate=38400,
+    port=serial_port,
+    baudrate=baud_rate,
     bytesize=serial.EIGHTBITS,
     parity=serial.PARITY_EVEN,
     stopbits=serial.STOPBITS_ONE
